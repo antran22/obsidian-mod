@@ -1,0 +1,8 @@
+.env
+.vault/
+node_modules/
+dist/
+main.js
+*.log
+.DS_Store
+references

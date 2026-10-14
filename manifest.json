@@ -1,0 +1,11 @@
+{
+  "id": "custom-obsidian-plugin",
+  "name": "Custom Obsidian Plugin",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "A custom plugin combining multiple simplified features.",
+  "author": "",
+  "authorUrl": "",
+  "fundingUrl": "",
+  "isDesktopOnly": false
+}
