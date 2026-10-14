@@ -3,6 +3,8 @@
 node_modules/
 dist/
 main.js
+styles.css
 *.log
 .DS_Store
+
 references

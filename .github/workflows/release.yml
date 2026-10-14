@@ -35,10 +35,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: plugin-artifacts
-          path: |
-            main.js
-            manifest.json
-            styles.css
+          path: dist/*
 
   release:
     runs-on: ubuntu-latest
@@ -55,9 +52,6 @@ jobs:
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
-          files: |
-            main.js
-            manifest.json
-            styles.css
+          files: dist/*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
