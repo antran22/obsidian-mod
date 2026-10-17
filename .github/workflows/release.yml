@@ -49,9 +49,21 @@ jobs:
         with:
           name: plugin-artifacts
 
-      - name: Create release
-        uses: softprops/action-gh-release@v2
+      - name: Generate artifact attestation
+        uses: actions/attest@v4
         with:
-          files: "*"
+          subject-path: |
+            main.js
+            manifest.json
+            styles.css
+
+      - name: Create release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="${GITHUB_REF#refs/tags/}"
+
+          gh release create "$tag" \
+            --title="$tag" \
+            --draft \
+            main.js manifest.json styles.css
