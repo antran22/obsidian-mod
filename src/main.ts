@@ -9,6 +9,10 @@ import {
   createUrlFormatterModule,
   DEFAULT_URL_FORMATTER_SETTINGS,
 } from "./modules/url-formatter";
+import {
+  createFileHiderModule,
+  DEFAULT_FILE_HIDER_SETTINGS,
+} from "./modules/file-hider";
 import type { ModuleRegistration } from "./module";
 
 const MODULES: ModuleRegistration<unknown>[] = [
@@ -23,6 +27,12 @@ const MODULES: ModuleRegistration<unknown>[] = [
     name: "URL Formatter",
     defaults: DEFAULT_URL_FORMATTER_SETTINGS,
     factory: createUrlFormatterModule as ModuleRegistration<unknown>["factory"],
+  },
+  {
+    id: "file-hider",
+    name: "File Hider",
+    defaults: DEFAULT_FILE_HIDER_SETTINGS,
+    factory: createFileHiderModule as ModuleRegistration<unknown>["factory"],
   },
 ];
 
