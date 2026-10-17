@@ -1,0 +1,55 @@
+.file-cleaner-preview-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  max-height: 50vh;
+  overflow-y: auto;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+}
+
+.file-cleaner-preview-item {
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.file-cleaner-preview-item:last-child {
+  border-bottom: none;
+}
+
+.file-cleaner-preview-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.file-cleaner-preview-checkbox {
+  flex-shrink: 0;
+}
+
+.file-cleaner-preview-icon {
+  flex-shrink: 0;
+}
+
+.file-cleaner-preview-path {
+  word-break: break-all;
+  font-family: var(--font-monospace);
+  font-size: 0.85em;
+}
+
+.file-cleaner-preview-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.file-cleaner-preview-buttons button {
+  margin-right: 0.5rem;
+}
+
+.file-cleaner-preview-buttons button:last-child {
+  margin-right: 0;
+}

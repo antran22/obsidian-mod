@@ -13,6 +13,10 @@ import {
   createFileHiderModule,
   DEFAULT_FILE_HIDER_SETTINGS,
 } from "./modules/file-hider";
+import {
+  createFileCleanerModule,
+  DEFAULT_FILE_CLEANER_SETTINGS,
+} from "./modules/file-cleaner";
 import type { ModuleRegistration } from "./module";
 
 const MODULES: ModuleRegistration<unknown>[] = [
@@ -33,6 +37,12 @@ const MODULES: ModuleRegistration<unknown>[] = [
     name: "File Hider",
     defaults: DEFAULT_FILE_HIDER_SETTINGS,
     factory: createFileHiderModule as ModuleRegistration<unknown>["factory"],
+  },
+  {
+    id: "file-cleaner",
+    name: "File Cleaner",
+    defaults: DEFAULT_FILE_CLEANER_SETTINGS,
+    factory: createFileCleanerModule as ModuleRegistration<unknown>["factory"],
   },
 ];
 
