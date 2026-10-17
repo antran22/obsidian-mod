@@ -1,6 +1,6 @@
 {
 	"name": "custom-obsidian-plugin",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A custom Obsidian plugin combining multiple simplified features.",
 	"main": "main.js",
 	"scripts": {
