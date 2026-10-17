@@ -1,7 +1,7 @@
 {
 	"id": "obsidian-mod-antran22",
 	"name": "antran22 Obsidian Mods",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"minAppVersion": "0.15.0",
 	"description": "A custom plugin combining multiple simplified features for antran22",
 	"author": "antran22",
