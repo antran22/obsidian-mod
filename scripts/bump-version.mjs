@@ -72,7 +72,7 @@ writeJson("versions.json", versions);
 
 runGitInteractive(["add", "package.json", "package-lock.json", "manifest.json", "versions.json"]);
 runGitInteractive(["commit", "-m", `Bump version to ${nextVersion}`]);
-runGitInteractive(["tag", `v${nextVersion}`]);
+runGitInteractive(["tag", "-a", `v${nextVersion}`, "-m", `v${nextVersion}`]);
 
 console.log(`\nCreated tag v${nextVersion}.`);
 console.log("Run: git push && git push --tags");
