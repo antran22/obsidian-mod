@@ -1,0 +1,78 @@
+.file-hider-patterns-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--size-4-4);
+}
+
+.file-hider-patterns-table th {
+  text-align: left;
+  padding: var(--size-4-2) var(--size-4-2);
+  border-bottom: 2px solid var(--background-modifier-border);
+  color: var(--text-muted);
+  font-weight: var(--font-semibold);
+  font-size: var(--font-ui-small);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.file-hider-pattern-row {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.file-hider-pattern-row:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.file-hider-pattern-row td {
+  padding: var(--size-4-2);
+  vertical-align: middle;
+}
+
+.file-hider-cell-toggle {
+  width: 40px;
+  text-align: center;
+}
+
+.file-hider-toggle {
+  cursor: pointer;
+  width: 36px;
+  height: 20px;
+}
+
+.file-hider-table-input {
+  width: 100%;
+  min-width: 80px;
+  padding: var(--size-4-1) var(--size-4-2);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  background: var(--background-modifier-form-field);
+  color: var(--text-normal);
+  font-size: var(--font-ui-small);
+}
+
+.file-hider-table-input:focus {
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 2px var(--background-modifier-border);
+}
+
+.file-hider-cell-remove {
+  width: 40px;
+  text-align: center;
+}
+
+.file-hider-remove-btn {
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--radius-s);
+  color: var(--text-muted);
+}
+
+.file-hider-remove-btn:hover {
+  color: var(--text-error);
+  background: var(--background-modifier-hover);
+}
+
+.file-hider-invalid-regex {
+  border-color: var(--text-error) !important;
+  background-color: var(--background-modifier-error);
+}

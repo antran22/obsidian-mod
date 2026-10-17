@@ -1,0 +1,29 @@
+/* Settings host tab styles */
+.custom-plugin-settings-tabs {
+  margin-top: 1rem;
+}
+
+.custom-plugin-settings-tab-list {
+  display: flex;
+  gap: 0.25rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+  margin-bottom: 1rem;
+}
+
+.custom-plugin-settings-tab {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.custom-plugin-settings-tab:hover {
+  color: var(--text-normal);
+}
+
+.custom-plugin-settings-tab.is-active {
+  color: var(--text-normal);
+  border-bottom-color: var(--interactive-accent);
+}
